@@ -1,5 +1,6 @@
 # my api keys are in personnel_key file you have to add your key to run this program.
 from personnel_key import *
+#we import requests package to access get reqeuest
 import requests
 import tweepy,time
 
@@ -42,5 +43,3 @@ api = tweepy.API(auth)
 api.update_status("Distance between {0} and {1} is {2} #myfirstTweet".format(orig_address,dest_address,driving_distance))
 # after updating the status it will go to sleep for about 1 minute
 time.sleep(60)
-
-
